@@ -8,14 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Parallel Test Suite</th></tr>
-<tr><td><a href="#t0">Demo Parallel Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,484</td><td>All Browser, Chrome, Firefox</td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,213</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Demo Parallel Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.parallel.ParallelTests</td><td><a href="#m0">LaunchChrome</a></td><td rowspan="1">1591143002884</td><td rowspan="1">9566</td></tr><tr class="passedeven"><td><a href="#m1">LaunchFirefox</a></td><td rowspan="1">1591143012458</td><td rowspan="1">18693</td></tr><tr class="passedeven"><td><a href="#m2">TryFacebook1</a></td><td rowspan="1">1591143031160</td><td rowspan="1">2050</td></tr><tr class="passedeven"><td><a href="#m3">TryFacebook2</a></td><td rowspan="1">1591143033215</td><td rowspan="1">2124</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.assertions.Assertions</td><td><a href="#m0">Login</a></td><td rowspan="1">1591144349053</td><td rowspan="1">388</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.assertions.Assertions</td><td><a href="#m1">Facebook</a></td><td rowspan="1">1591144343881</td><td rowspan="1">5164</td></tr><tr class="passedeven"><td><a href="#m2">Launch</a></td><td rowspan="1">1591144337256</td><td rowspan="1">6618</td></tr></tbody>
 </table>
-<h2>Demo Parallel Test</h2><h3 id="m0">com.parallel.ParallelTests#LaunchChrome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.parallel.ParallelTests#LaunchFirefox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.parallel.ParallelTests#TryFacebook1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.parallel.ParallelTests#TryFacebook2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.assertions.Assertions#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Facebook – log in or sign up] but found [FB Title]
+	at com.assertions.Assertions.Login(Assertions.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.assertions.Assertions#Facebook</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.assertions.Assertions#Launch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
