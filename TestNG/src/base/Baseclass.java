@@ -1,13 +1,10 @@
 package base;
+import org.automationtesting.excelreport.Xl;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-
-import com.relevantcodes.extentreports.ExtentReports;
-
-import org.automationtesting.excelreport.Xl;
 
 
 public class Baseclass {
@@ -28,7 +25,7 @@ public class Baseclass {
 
 	@AfterSuite
 	public void generateReport() throws Exception {
-		Xl.generateReport("//test-output//Report_Excel.xlsx");
+		Xl.generateReport("Report_Excel.xlsx");
 		//	extent = new ExtentReports(System.getProperty("user.dir") + "//test-output//STMExtentReport.html", true);
 	}
 
