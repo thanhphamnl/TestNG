@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.extentreports.ExtentReportsClass">
+      <class name="com.launch.LaunchBrowser">
         <methods>
-          <include name="failTest"/>
-          <include name="endReport"/>
-          <include name="skipTest"/>
-          <include name="startReport"/>
-          <include name="getResult"/>
+          <include name="LaunchBrowser"/>
         </methods>
-      </class> <!-- com.extentreports.ExtentReportsClass -->
+      </class> <!-- com.launch.LaunchBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
